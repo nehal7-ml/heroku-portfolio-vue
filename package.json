@@ -13,11 +13,12 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "prestart": "npm run build",
+    "prestart": "npm run build-only",
     "start": "node server.js"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "pinia": "^2.1.7",
     "serve-static": "^1.15.0",
